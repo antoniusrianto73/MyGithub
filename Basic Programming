@@ -30,5 +30,13 @@
     }
 }
 
- 5. The output of code below is :
- 
+ 5. The output of code below is : 3556 Golden Street Miami
+  public class Question3 {
+	  public static void main(String[] args) {
+	    String name, address; 
+
+	    name = "Jack Donovan";
+	    address = "3556 Golden Street Miami";
+	    System.out.println(address.replace(" "," ")); 
+ }
+}
