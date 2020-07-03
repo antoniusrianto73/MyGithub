@@ -1,0 +1,10 @@
+1. What is a flaky test?
+A flaky test is a test that both passes and fails periodically without any code changes. 
+Flaky tests are definitely annoying but they can also be quite costly since they often require engineers to retrigger
+entire builds on CI and often waste a lot of time waiting for new builds to complete successfully.
+
+2. An element in a website is using ajax/javascript to show the data (processed as
+asynchronous). What do you do to test that element?
+
+
+3. A website page can only be accessed with CAPTCHA. How do you test that page?
