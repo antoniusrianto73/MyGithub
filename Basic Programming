@@ -1,7 +1,34 @@
-What is the data-type usually used in arithmetic operation?
-  long   :Neither operand is a float or a double (integer arithmetic); at least one operand is a long.
-  int	   :a variable declared to be of type int can be used to contain integral values only, values that do not contain decimal places.
-  char   :data type can be used to store a single character, such as the letter ’a’, the digit character ’6’, or a semicolon (’;’)
-  float	 :can be used for storing floating-point numbers (values containing decimal places).
-  double :type is the same as type float, only with roughly twice the precision
-  boolean  :data type can be used to store just the values 0 or 1. Variables of this type are used for indicating an on/off, yes/no, or true/false situation.
+  1. What is the data-type usually used in arithmetic operation?
+      long   :Neither operand is a float or a double (integer arithmetic); at least one operand is a long.
+      int	   :a variable declared to be of type int can be used to contain integral values only, values that do not contain decimal places.
+      char   :data type can be used to store a single character, such as the letter ’a’, the digit character ’6’, or a semicolon (’;’)
+      float	 :can be used for storing floating-point numbers (values containing decimal places).
+      double :type is the same as type float, only with roughly twice the precision
+      boolean :data type can be used to store just the values 0 or 1. Variables of this type are used for indicating an on/off, yes/no, or true/false situation.
+  
+  2. What is the data-type usually used in word and character?
+       char   :data type can be used to store a single character, such as the letter ’a’, the digit character ’6’, or a semicolon (’;’)
+       String :generally considered a data type and is often implemented as an array data structure of bytes (or words) that stores a sequence of elements, 
+       typically characters, using some character encoding
+       
+  3. The output of code below is : 113
+      class area {
+      public static void main(String[] args) {
+        int a = 100 +3 * 5 -10 / 5;
+		    System.out.println(a);
+   }
+ }
+ 
+ 4. The output of code below is : 2
+  class average {
+  public static void main(String[] args) {
+        int a = 0;
+        for ( int i=0; i<6; ++i){
+            a= a +2;
+        }	 
+		    System.out.println(a/6);
+    }
+}
+
+ 5. The output of code below is :
+ 
