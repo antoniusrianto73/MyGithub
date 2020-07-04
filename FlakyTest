@@ -23,3 +23,23 @@ Testing with real Ajax calls won't even be possible in my favourite environment,
 Indeed the solutions describes in this article are appropriate for unit testing, not end-to-end or functional one.
 
 3. A website page can only be accessed with CAPTCHA. How do you test that page?
+
+Common Captcha
+a. Ensure that the system accepts valid Captcha.
+b. Ensure that the system rejects the invalid Captcha.
+c. Ensure that the Captcha code resets as the system reloads.
+d. Ensure that the Captcha changes as the user enters wrong value.
+
+Image Captcha
+a. Ensure that the code in the Image captcha is viewable.
+b. Ensure the readability of the Captcha.
+c. Ensure that the captcha is case sensitive. 
+
+Recaptcha:
+a. Ensure the readability of the Captcha.
+b. Ensure that the captcha is case sensitive.(requirement dependent)
+c. Ensure that the user receives new captcha on clicking the link "Get a new challenge".
+d. Ensure that the system rejects, when the user enters only one valid captcha for the two captchas provided.
+e. Ensure that the Captcha code is not confusing. For eg: Zero and O (Alphabet),numbers 6 and 9)
+f. Ensure that the user receives information about how to use the captcha, on clicking the help button.
+g. Ensure that the audio version of Captcha is working (requirement dependent).
