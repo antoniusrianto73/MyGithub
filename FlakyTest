@@ -1,4 +1,5 @@
 1. What is a flaky test?
+
 A flaky test is a test that both passes and fails periodically without any code changes. 
 Flaky tests are definitely annoying but they can also be quite costly since they often require engineers to retrigger
 entire builds on CI and often waste a lot of time waiting for new builds to complete successfully.
@@ -6,5 +7,19 @@ entire builds on CI and often waste a lot of time waiting for new builds to comp
 2. An element in a website is using ajax/javascript to show the data (processed as
 asynchronous). What do you do to test that element?
 
+A first choice for testing code that performs Ajax calls in it is to stub the library method it's using (Stubbing the library calls)
+
+The Steps:
+a. save the old method in a variable (var oldAjax = jQuery.ajax;)
+b. Substitute it with a closure that saves the callback in a variable. This closure may check its arguments (becoming a kind of mock).
+c. Use the callback to pass back a canned response, written in literal JSON, XML or whatever you return from the server side.
+d. Restore the old method (teardown phase) with a new assignment.
+
+An alternative way to stub Ajax calls is to stub out the creation of XMLHttpRequest.
+Since XMLHttpRequest is just a global object of the class Function, it can be substituted. 
+
+Testing JavaScript code is always possible, and when there is more logic involved than an Ajax call, stubbing helps isolating the system under test. 
+Testing with real Ajax calls won't even be possible in my favourite environment, jsTestDriver, as the code is served from a webserver on localhost and not from the real application.
+Indeed the solutions describes in this article are appropriate for unit testing, not end-to-end or functional one.
 
 3. A website page can only be accessed with CAPTCHA. How do you test that page?
