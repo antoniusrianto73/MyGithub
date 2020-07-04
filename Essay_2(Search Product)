@@ -1,0 +1,18 @@
+2020-07-04 22:53:09.918 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2020-07-04 22:53:09.922 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2020-07-04 22:53:11.027 DEBUG testcase.                                - 1: openBrowser("")
+2020-07-04 22:53:16.721 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = e0f4a1174549dea48d46366692a5895a
+2020-07-04 22:53:16.897 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 83.0.4103.116
+2020-07-04 22:53:16.898 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 8.1
+2020-07-04 22:53:16.899 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2020-07-04 22:53:16.942 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2020-07-04 22:53:16.960 DEBUG testcase.                                - 2: navigateToUrl("https://www.bukalapak.com/")
+2020-07-04 22:53:22.193 DEBUG testcase.                                - 3: click(findTestObject("Page_Situs Belanja Online dan Jual Beli Mud_3c8940/input_Lihat BukaMall_searchkeywords"))
+2020-07-04 22:53:26.092 DEBUG testcase.                                - 4: setText(findTestObject("Page_Situs Belanja Online dan Jual Beli Mud_3c8940/input_Lihat BukaMall_searchkeywords_1"), "iphone 8")
+2020-07-04 22:53:30.320 DEBUG testcase.                                - 5: sendKeys(findTestObject("Page_Situs Belanja Online dan Jual Beli Mud_3c8940/input_Lihat BukaMall_searchkeywords_1"), Keys.chord(ENTER))
+2020-07-04 22:53:41.584 DEBUG testcase.                                - 6: click(findTestObject("Page_Jual Produk Iphone 8 Murah dan Terleng_f552fc/label_4 ke atas"))
+2020-07-04 22:53:45.621 DEBUG testcase.                                - 7: click(findTestObject("Page_Jual Produk Iphone 8 Murah dan Terleng_f552fc/input"))
+2020-07-04 22:53:56.614 DEBUG testcase.                                - 8: click(findTestObject("Page_Jual Produk Iphone 8 Murah dan Terleng_f552fc/input"))
+2020-07-04 22:54:29.200 DEBUG testcase.                                - 9: click(findTestObject("Page_Jual Produk Iphone 8 Murah dan Terleng_f552fc/input"))
+2020-07-04 22:54:38.741 DEBUG testcase.                                - 10: click(findTestObject("Page_Jual Produk Iphone 8 Murah dan Terleng_f552fc/a_Lihat 64 katalog lainnya"))
+2020-07-04 22:54:54.381 DEBUG testcase.                                - 11: click(findTestObject("Page_Katalog Apple iPhone 8 256GB Red  Bukalapak/img_Apple iPhone 8 256GB Red_c-thumb u-bord_cdbd3c"))
